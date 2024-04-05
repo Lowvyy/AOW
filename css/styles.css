@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.conteiners {
+	margin: 10px 50px;
+
+}
+.conteiners img {
+	width: 200px;
+	height: 300px;
+	padding: 10px;
+	transition: 0.5s;
+}
+.conteiners img:hover {
+	transform: scale(1.1);
+}
+.her {
+	width: 100%;
+	height: 100%;
+}
+

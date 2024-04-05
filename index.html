@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="./scss/scss.css" />
+	<link rel="stylesheet" href="css/lightbox.css">
 	<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
 		crossorigin="anonymous"></script>
 	<title>ART OF WAR</title>
@@ -139,72 +140,20 @@
 					</div>
 				</section>
 			</div>
-			<div class="random-container" style="height: 100%;">
-
-				<h1 style="text-align:center;font-family:Arial;font-weight: 300;">Basic jQuery Gallery</h1>
-				
-				<div class="kun-gallery">
-				  <ul>
-					 <li>
-						<a class="image-1" style="background-image:url(img/bjj/foto1.png)"></a>
-					 </li>
-					 <li>
-						<a class="image-2" style="background-image:url(img/bjj/foto1.png);"></a>
-					</li>
-					 <li>
-						<a class="image-3" style="background-image:url(img/bjj/foto1.png)">
-					 </a>
-					 </li>
-					 <li>
-						<a class="image-4" style="background-image:url(img/bjj/foto1.png)">
-					 </a>
-					 </li>
-					 <li>
-						<a class="image-5" style="background-image:url(img/bjj/foto1.png)">
-					 </a>
-					 </li>
-					 <li>
-						<a class="image-6" style="background-image:url(img/bjj/foto1.png)">
-					 </a>
-					 </li>
-					 <li>
-						<a class="image-7" style="background-image:url(img/bjj/foto1.png)">
-					 </a>
-					 </li>
-					 <li>
-						<a class="image-8" style="background-image:url(img/bjj/foto1.png)">
-					 </a>
-					 </li>
-				  </ul>
+			<div id="GALLERY" class="conteiners">
+				<h1>ART OF WAR GALLERY</h1>
+				<div class="img-container">
+					<a href="img/bjj/foto1.png" data-lightbox="images"><img class="img-AOF" src="img/bjj/foto1.png" alt=""> </a>
+					<a href="img/bjj/foto2.jpg" data-lightbox="images"><img class="img-AOF" src="img/bjj/foto2.jpg" alt=""> </a>
+					<a href="img/bjj/foto3.jpg" data-lightbox="images"><img class="img-AOF" src="img/bjj/foto3.jpg" alt=""> </a>
+					<a href="img/bjj/foto4.jpg" data-lightbox="images"><img class="img-AOF" src="img/bjj/foto4.jpg" alt=""> </a>
+					<a href="img/bjj/foto1.png" data-lightbox="images"><img class="img-AOF" src="img/bjj/foto1.png" alt=""> </a>
+					<a href="img/bjj/foto1.png" data-lightbox="images"><img class="img-AOF" src="img/bjj/foto1.png" alt=""> </a>
+					<a href="img/bjj/foto2.jpg" data-lightbox="images"><img class="img-AOF" src="img/bjj/foto2.jpg" alt=""> </a>
+					<a href="img/bjj/foto3.jpg" data-lightbox="images"><img class="img-AOF" src="img/bjj/foto3.jpg" alt=""> </a>
+					<a href="img/bjj/foto4.jpg" data-lightbox="images"><img class="img-AOF" src="img/bjj/foto4.jpg" alt=""> </a>
 				</div>
-			 
-				<!------------------------- KUN LIGHTBOX ---------------------------->
-				
-				<div class="gallery-container">
-				  <div class="kun-modal"></div>
-				  <div class="left-arrow"> < </div>
-				  <div class="right-arrow"> > </div>
-				  <div class="close-icon"> x </div>
-				  <div class="kun-lightbox">
-			 
-						   <img class="image-1" src="img/bjj/foto1.png" />
-			 
-						   <img class="image-2" src="img/bjj/foto1.png" />
-			 
-						   <img class="image-3" src="img/bjj/foto1.png" />
-			 
-						   <img class="image-4" src="img/bjj/foto1.png" />
-			 
-							<img class="image-5" src="img/bjj/foto1.png" />
-			 
-							<img class="image-6" src="img/bjj/foto1.png" />
-			 
-							<img class="image-7" src="img/bjj/foto1.png" />
-					 
-							<img class="image-8" src="img/bjj/foto1.png" />
-						</div>
-				  </div>
-			</div>
+			</div>				
 			<footer id="CONTACT">
 				<div class="container">
 					<div class="footer__row">
@@ -241,6 +190,26 @@
 			</footer>
 		</main>
 	</div>
+	<script src="lightbox-plus-jquery.js"></script>
+				<script>
+					lightbox.option({
+						
+						"wrapAround" : true
+					})
+					var images = document.querySelectorAll('.img-container img');
+
+					function hideImages() {
+  var images = document.querySelectorAll('.img-container img');
+  var screenWidth = window.innerWidth;
+}
+  // Получаем все изображения в галерее
+  var images = document.querySelectorAll('.img-container img');
+
+  // Перебираем изображения, начиная с четвертого, и скрываем их
+  for (var i = 4; i < images.length; i++) {
+    images[i].style.display = 'none';
+  }
+				</script>
 	<script src="script.js"></script>
 </body>
 
