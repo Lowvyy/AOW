@@ -830,12 +830,11 @@ cursor: default;
 	height: 100%;
 }
 .conteiners h1 {
-	color: white;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	text-align: center;
 	font-family: Lato;
-    font-size: 18px;
+    font-size: 25px;
     line-height: 1.2;
     font-weight: 700;
     text-transform: uppercase;
@@ -888,5 +887,37 @@ cursor: default;
 	.img-container img {
 	width: 70px;
 	height: 170px;
+	}
+}
+ .SCHEDULE h1 {
+	padding-top: 40px;
+	padding-bottom: 30px;
+	text-align: center;
+	font-family: Lato;
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #df0000;
+
+ }
+
+.SCHEDULE-IMG {
+	max-width: 100%;
+	max-height: 100%;
+}
+.SCHEDULE_DIS {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.SCHEDULE {
+	margin: 10px 50px;
+}
+
+@media (max-width:650px) {
+	.SCHEDULE {
+		margin: 10px 20px;
 	}
 }
