@@ -818,7 +818,7 @@ cursor: default;
 }
 .conteiners img {
 	width: 250px;
-	height: 350px;
+	height: 320px;
 	padding: 10px;
 	transition: 0.5s;
 }
@@ -850,13 +850,13 @@ cursor: default;
 @media (max-width:1035px) {
 	.img-container img {
 	width: 220px;
-	height: 320px;
+	height: 270px;
 	}
 }
 @media (max-width:940px) {
 	.img-container img {
 	width: 200px;
-	height: 300px;
+	height: 250px;
 	}
 }
 @media (max-width:850px) {
@@ -880,13 +880,13 @@ cursor: default;
 @media (max-width:530px) {
 	.img-container img {
 	width: 100px;
-	height: 200px;
+	height: 169px;
 	}
 }
 @media (max-width:410px) {
 	.img-container img {
 	width: 70px;
-	height: 170px;
+	height: 140px;
 	}
 }
  .SCHEDULE h1 {
@@ -919,5 +919,37 @@ cursor: default;
 @media (max-width:650px) {
 	.SCHEDULE {
 		margin: 10px 20px;
+	}
+}
+.artheder {
+	width: 100%;
+	font-family: Lato;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 150px;
+	font-weight: 900;
+
+}
+@media (max-width:920px) {
+	.artheder {
+		font-size: 120px;
+	}
+}
+@media (max-width:750px) {
+	.artheder {
+		font-size: 100px;
+	}
+}
+@media (max-width:620px) {
+	.artheder {
+		font-size: 75px;
+	}
+}
+@media (max-width:450px) {
+	.artheder {
+		display: none;
 	}
 }
