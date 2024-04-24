@@ -840,7 +840,7 @@ footer .footer__info p:first-child {
 @media (max-width: 640px) {
   .img-container img {
     width: 130px;
-    height: 230px;
+    height: 170px;
   }
 }
 @media (max-width: 530px) {
