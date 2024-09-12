@@ -847,6 +847,11 @@ cursor: default;
 	display: flex;
 	align-items: center;
 }
+.img-container img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+  }
 @media (max-width:1035px) {
 	.img-container img {
 	width: 220px;
@@ -931,7 +936,7 @@ cursor: default;
 	text-align: center;
 	font-size: 150px;
 	font-weight: 900;
-
+	color: #ffffff;
 }
 @media (max-width:920px) {
 	.artheder {
@@ -953,3 +958,4 @@ cursor: default;
 		display: none;
 	}
 }
+
